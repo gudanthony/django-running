@@ -14,7 +14,6 @@ class CountryState(TimeStampedModel):
     country = CountryField()
     code = models.CharField('Code', max_length=8, null=True, blank=True)
     name = models.CharField('Country State', max_length=32)
-    # image_url = models.URLField(null=True, blank=True)
 
     def __str__(self):
         """."""
@@ -37,7 +36,6 @@ class Municipality(TimeStampedModel):
         related_name='municipalities', related_query_name='municipalities')
     code = models.CharField('Code', max_length=8, null=True, blank=True)
     name = models.CharField('Municipality', max_length=32)
-    # image_url = models.URLField(null=True, blank=True)
 
     def __str__(self):
         """."""
@@ -60,7 +58,6 @@ class Parish(TimeStampedModel):
         related_name='parishes', related_query_name='parish')
     code = models.CharField('Code', max_length=8, null=True, blank=True)
     name = models.CharField('Parish', max_length=32)
-    # image_url = models.URLField(null=True, blank=True)
 
     def __str__(self):
         """."""
